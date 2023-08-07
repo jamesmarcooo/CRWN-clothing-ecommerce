@@ -1,0 +1,9 @@
+{
+  "name": "CRWN-clothing-ecommerce",
+  "version": "1.0.0",
+  "description": "Ecommerce App",
+  "main": "index.js",
+  "repository": "https://github.com/jamesmarcooo/CRWN-clothing-ecommerce.git",
+  "author": "Marco <james.marco.reyes@eee.upd.edu.ph>",
+  "license": "MIT"
+}
