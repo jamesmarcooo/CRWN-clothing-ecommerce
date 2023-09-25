@@ -7,24 +7,22 @@ import './navigation.styles.scss';
 
 const Navigation = () => {
   return (
-    <>
-      <div className="navigation">
-        <Link className="logo-container" to="/">
-          <CrwnLogo className="logo"></CrwnLogo>
+    <Fragment>
+      <div className='navigation'>
+        <Link className='logo-container' to='/'>
+          <CrwnLogo className='logo' />
         </Link>
-        <div className="nav-links-container">
-          <Link className="nav-link" to="/shop">
+        <div className='nav-links-container'>
+          <Link className='nav-link' to='/shop'>
             SHOP
           </Link>
-        </div>
-        <div className="nav-links-container">
-          <Link className="nav-link" to="/auth">
+          <Link className='nav-link' to='/auth'>
             SIGN IN
           </Link>
         </div>
       </div>
       <Outlet />
-    </>
+    </Fragment>
   );
 };
 
