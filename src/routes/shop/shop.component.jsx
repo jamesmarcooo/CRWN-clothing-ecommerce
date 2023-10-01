@@ -1,6 +1,6 @@
-import { Routes, Route } from 'react';
+import { Routes, Route } from 'react-router-dom';
 
-import CategoryPreview from '../../components/category-preview/category-preview.components';
+import CategoriesPreview from '../categories-preview/categories-preview.component';
 import Category from '../category/category.component';
 
 import './shop.styles.scss';
@@ -8,8 +8,8 @@ import './shop.styles.scss';
 const Shop = () => {
   return (
     <Routes>
-      <Route index element={<CategoryPreview />}></Route>
-      <Route path=":category" element={<Category />}></Route>
+      <Route index element={<CategoriesPreview />} />
+      <Route path=':category' element={<Category />} />
     </Routes>
   );
 };

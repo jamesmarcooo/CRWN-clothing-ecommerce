@@ -1,9 +1,9 @@
 import { useContext, Fragment } from 'react';
 
 import { CategoriesContext } from '../../contexts/categories.context';
-import CategoryPreview from '../../components/category-preview/category-preview.components';
+import CategoryPreview from '../../components/category-preview/category-preview.component';
 
-const Shop = () => {
+const CategoriesPreview = () => {
   const { categoriesMap } = useContext(CategoriesContext);
 
   return (
@@ -18,4 +18,4 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+export default CategoriesPreview;
