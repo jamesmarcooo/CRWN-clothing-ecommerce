@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
-import { useSelector } from 'react-redux/es/hooks/useSelector';
+import { useSelector } from 'react-redux';
 
 import {
-  selectCategoriesIsLoading,
   selectCategoriesMap,
+  selectCategoriesIsLoading,
 } from '../../store/categories/category.selector';
 
 import CategoryPreview from '../../components/category-preview/category-preview.component';
