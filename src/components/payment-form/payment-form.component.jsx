@@ -30,9 +30,13 @@ const PaymentForm = () => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ amount: amount * 100 }),
-    }).then((res) => {
-      return res.json();
-    });
+    })
+      .then((result) => result.json())
+      .then((res) => {
+        return res.json();
+      });
+
+    console.log(response);
 
     const clientSecret = response.paymentIntent.client_secret;
 
@@ -40,7 +44,7 @@ const PaymentForm = () => {
       payment_method: {
         card: elements.getElement(CardElement),
         billing_details: {
-          name: currentUser ? currentUser.displayName : 'Yihua Zhang',
+          name: currentUser ? currentUser.displayName : 'James Marco',
         },
       },
     });
